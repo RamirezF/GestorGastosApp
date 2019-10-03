@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GestorGastosApp</string>
+
+    <string-array name="app_tarjetas">
+        <item>Tarjeta de credito</item>
+        <item>Ahorro</item>
+        <item>Efectivo</item>
+    </string-array>
+</resources>

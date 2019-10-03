@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contabilidad de Ingresos / Egresos"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/lineargenial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ver_ahorro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:text="Saldo Actual Ahorro"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:text="S/:"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAhorro"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:hint="Soles"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ver_credito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:text="Saldo Actual Crédito"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:text="S/:"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCredito"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:hint="Soles"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ver_efectivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:text="Saldo Actual Efectivo"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:text="S/:"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEfectivo"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="left|center_vertical"
+                android:hint="Soles"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Proporción Ingresos/Egresos"
+            android:textAlignment="center"
+            android:textColor="#1E38BB"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_height="50dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineargenial"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:text="Ingresos"
+        android:textColor="#880716"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineargenial"
+        android:layout_alignParentStart="true"
+
+        android:text="Egresos"
+        android:textAlignment="viewEnd"
+        android:textColor="#880716"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
